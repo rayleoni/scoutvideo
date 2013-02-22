@@ -8,8 +8,8 @@
 <h1>  <%= @scout.offer %> </h1>
 </center>
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-<center><h4> Share this url: localhost:3000/scout/6 
+<center><h4> Share this url: </br><%=url_for(:only_path => false) %></br>
 	</br> We'll notify you when the other person records a video. </h4></center>
-</br></br></br></br>
-<%= link_to 'Edit', edit_scout_path(@scout) %> |
+</br></br></br>
+<%= link_to 'Edit', edit_scout_path(@scout) %> 
 <%= link_to 'Back', scouts_path %>
